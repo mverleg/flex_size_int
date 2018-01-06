@@ -63,13 +63,14 @@ Precision takes space
 
 This is rather inevitable in any format, but worth mentioning anyway. It takes much less space to store large integers in a float64, which is not precise for high integers (except for the few that are exactly representable). For example, the highest float64 value is around ``1.8*10^308``. In different formats:
 
-* Float64: ``1.8*10^308`` is stored in 8 bytes; it's an exact integer, but ``1.8*10^308 - 1`` and ````1.8*10^308 + 1`` are not.
-* Signed Integer64: ``1.8*10^308`` overflows massively since the maximum value is about ``9.22*10^18``.
-* Unsigned Integer64: This still overflows massively, the maximum is only twice as large.
-* Integer1024: in this theoretical format, ``1.8*10^308`` could be represented exactly using 128 bytes (but the format isn't really available). Not that the number ``3`` also takes 128 bytes in this format.
-* Flex sized integer: with this package, ``1.8*10^308`` could be represented exactly using 147 bytes. This is more than Integer1024, but:
-  1. This format actually exists.
-  2. The number ``3`` only takes one byte instead of 128.
+* **Float64**: ``1.8*10^308`` is stored in 8 bytes; it's an exact integer, but ``1.8*10^308 - 1`` and ````1.8*10^308 + 1`` are not.
+* **Signed Integer64**: ``1.8*10^308`` overflows massively since the maximum value is about ``9.22*10^18``.
+* **Unsigned Integer64**: This still overflows massively, the maximum is only twice as large.
+* **Integer1024**: in this theoretical format, ``1.8*10^308`` could be represented exactly using 128 bytes (but the format isn't really available). Not that the number ``3`` also takes 128 bytes in this format.
+* **Flexible sized integer**: with this package, ``1.8*10^308`` could be represented exactly using 147 bytes. This is more than Integer1024, but:
+
+    1. This format actually exists.
+    2. The number ``3`` only takes one byte instead of 128.
 
 Features
 -------------------------------
@@ -102,9 +103,9 @@ Multi-platform
 
 This is not actually done yet, but the plan is to support multiple compatible versions:
 
-- Kotlin (callable from JVM languages like Kotlin, Java, Scala)
-- Rust (callable from Rust, C, C++, C#, Julia...)
-- Python (callable from, well, Python)
+- Kotlin_ (callable from JVM languages like Kotlin, Java, Scala)
+- Rust_ (callable from Rust, C, C++, C#, Julia...)
+- Python_ (callable from, well, Python)
 
 This means you can save a file using flexible integers in Java and read it in C++, for example.
 
@@ -131,8 +132,10 @@ The project has good automated test coverage. Tests are run automatically for co
 
 .. _`the format description`: https://github.com/mverleg/flex_size_int/blob/master/storage_format.rst
 .. _`Revised BSD License`: https://github.com/mverleg/flex_size_int/blob/master/LICENSE.rst
-.. _JVM: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README.rst
-.. _Binary: https://github.com/mverleg/flex_size_int/blob/master/rust/README.rst
-.. _Python: https://github.com/mverleg/flex_size_int/blob/master/python/README.rst
+.. _JVM: https://github.com/mverleg/flex_size_int/blob/master/kotlin/
+.. _Kotlin: https://github.com/mverleg/flex_size_int/blob/master/kotlin/
+.. _Binary: https://github.com/mverleg/flex_size_int/blob/master/rust/
+.. _Rust: https://github.com/mverleg/flex_size_int/blob/master/rust/
+.. _Python: https://github.com/mverleg/flex_size_int/blob/master/python/
 
 

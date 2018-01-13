@@ -70,8 +70,8 @@ This is rather inevitable in any format, but worth mentioning anyway. It takes m
 * **Integer1024**: in this theoretical format, ``1.8*10^308`` could be represented exactly using 128 bytes (but the format isn't really available). Not that the number ``3`` also takes 128 bytes in this format.
 * **Flexible sized integer**: with this package, ``1.8*10^308`` could be represented exactly using 147 bytes. This is more than Integer1024, but:
 
-    1. This format actually exists.
-    2. The number ``3`` only takes one byte instead of 128.
+  1. This format actually exists.
+  2. The number ``3`` only takes one byte instead of 128.
 
 Features
 -------------------------------

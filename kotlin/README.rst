@@ -9,10 +9,8 @@ The Kotlin implementation is used to generate two versions:
 
 For usage instructions, please follow the link of your platform. There is also `the general readme`_ for more platforms and background.
 
-.. _`the general readme`: .. _`the format description`: https://github.com/mverleg/flex_size_int/blob/master/README.rst
+.. _`the general readme`: https://github.com/mverleg/flex_size_int/blob/master/README.rst
 .. _JVM: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README_JVM.rst
 .. _Javascript: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README_JS.rst
-
-
 
 

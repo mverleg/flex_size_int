@@ -2,18 +2,17 @@
 Flex size integers - Kotlin
 ===============================
 
-These are the JVM-specific instructions. Read `the general readme`_ first.
+The Kotlin implementation is used to generate two versions:
 
-Installation
--------------------------------
+* JVM_ (Kotlin/Java/Scala/...)
+* Javascript_ (browsers, Node)
 
-**The Kotlin version is still under development, and is not yet ready to be used!**
-
-Use from other languages
--------------------------------
-
-
+For usage instructions, please follow the link of your platform. There is also `the general readme`_ for more platforms and background.
 
 .. _`the general readme`: .. _`the format description`: https://github.com/mverleg/flex_size_int/blob/master/README.rst
+.. _JVM: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README_JVM.rst
+.. _Javascript: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README_JS.rst
+
+
 
 

@@ -19,6 +19,7 @@ Installation
 To use this library, please follow the steps for the platform(s) you use:
 
 * JVM_ (Kotlin/Java/Scala/...)
+* Javascript_ (browsers, Node)
 * Binary_ (Rust/C/C++/C#/...)
 * Python_
 
@@ -103,7 +104,8 @@ Multi-platform
 
 This is not actually done yet, but the plan is to support multiple compatible versions:
 
-- Kotlin_ (callable from JVM languages like Kotlin, Java, Scala)
+- JVM_ (Kotlin_) (callable from JVM languages like Kotlin, Java, Scala)
+- Javascript_ (Kotlin_) (usable in browsers and on Node)
 - Rust_ (callable from Rust, C, C++, C#, Julia...)
 - Python_ (callable from, well, Python)
 
@@ -132,10 +134,11 @@ The project has good automated test coverage. Tests are run automatically for co
 
 .. _`the format description`: https://github.com/mverleg/flex_size_int/blob/master/storage_format.rst
 .. _`Revised BSD License`: https://github.com/mverleg/flex_size_int/blob/master/LICENSE.rst
-.. _JVM: https://github.com/mverleg/flex_size_int/blob/master/kotlin/
+.. _JVM: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README_JVM.rst
 .. _Kotlin: https://github.com/mverleg/flex_size_int/blob/master/kotlin/
 .. _Binary: https://github.com/mverleg/flex_size_int/blob/master/rust/
 .. _Rust: https://github.com/mverleg/flex_size_int/blob/master/rust/
 .. _Python: https://github.com/mverleg/flex_size_int/blob/master/python/
+.. _Javascript: https://github.com/mverleg/flex_size_int/blob/master/kotlin/README_JS.rst
 
 
